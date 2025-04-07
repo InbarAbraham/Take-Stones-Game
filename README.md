@@ -12,6 +12,7 @@ of the victory or loss of the node.
 
 
 The algorithm combines alpha-beta pruning to reduce the number of nodes explored:
+
 • If a value is discovered that leads to a certain quantity being irrelevant, in case the value is already outside the alpha-beta range, the algorithm does not continue exploring this node and performs a "pruning".
 
 
