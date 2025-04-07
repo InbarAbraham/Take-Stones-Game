@@ -21,7 +21,9 @@ Game structure:
 • TakeStones – This class represents the state of the game including the available stones, the last move made, and the current player.
 
 • Get_legal_moves – A function that returns all possible moves for the current player, according to the following rules:
+
     o At the beginning of the game, the player can choose odd stones less than n/2.
+    
     o After the first move, a player can choose stones that are a multiple of the previous move or can be divided by it.
 
 • Evaluate – A function that evaluates whether the game is over and if so who won, returning a value according to the final result.
