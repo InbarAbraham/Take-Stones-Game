@@ -1,19 +1,22 @@
 # Take-Stones-Game
 Job Description:
+---
 The job is to implement the MiniMax algorithm with alpha-beta pruning for the game "Take-Stones". 
 The goal of the algorithm is to calculate the optimal move for the first player (Max), while pruning unnecessary branches in the game tree to optimize the search and reduce the number of nodes calculated.
----
+
 Implementation of the algorithm:
+---
 The algorithm is based on the functions max_value and min_value , with each function searching for the maximum or minimum value for the current player.
 Each function performs recursion until it reaches a final state, that is, until it reaches a leaf, and then returns the value
 of the victory or loss of the node.
----
+
 
 The algorithm combines alpha-beta pruning to reduce the number of nodes explored:
 • If a value is discovered that leads to a certain quantity being irrelevant, in case the value is already outside the alpha-beta range, the algorithm does not continue exploring this node and performs a "pruning".
---- 
+
 
 Game structure:
+---
 • TakeStones – This class represents the state of the game including the available stones, the last move made, and the current player.
 
 • Get_legal_moves – A function that returns all possible moves for the current player, according to the following rules:
